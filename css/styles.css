@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    background: #FAF9F9; 
+}
+
+hr {
+    width: 80px;
+    border: 1px solid white; 
+    background: white;
+    border-radius: 10px;
+    height: 5px;
+    margin-bottom: 50px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Styles for logo image */ 
+#logo-img {
+    max-width: 200px; 
+}
+
+.logo-container, .nav-links {
+    display: flex;
+}
+
+.logo-container {
+    flex: 1;
+    justify-content: flex-start;
+    margin-left: 10%;
+}
+
+/* Styles for nav and nav links */
+nav {
+    display: flex;
+    flex: 1; 
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+.nav-links {
+    list-style: none; 
+} 
+
+.nav-link { 
+    margin: 30px;
+    color: #2E2E2E;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#nav-link-last {
+    margin-right: 0px;  
+} 
+
+.nav-link:hover {
+    color: #2098D1;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px; 
+    background-color: #2E2E2E;
+    margin: 5px;
+    transition: all 0.3s ease; 
+}
+
+/* Styles for main content */
+.presentation {
+    display:flex;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 2;
+}
+
+/* Styles for intro text*/
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 600;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    background-clip: text;
+    -webkit-background-clip: text;   
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+    padding-right: 200px;
+}
+
+.intro-text p, .about-div p, .portfolio-div p, .contact-div p {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772; 
+}
+
+/* Styles for buttons*/
+
+button:focus {
+    outline:0;
+} 
+
+.cta {
+    padding: 50px 0px 0px 0px;
+}
+
+.cta-resume {
+    background: #fff;
+    border: 2px solid #2098D1;
+    color: #2098D1;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-projects {
+    background: #2098D1;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin: 30px 0px 0px 30px;
+}
+
+/* Styles for main image next to introduction */
+.cover {
+    flex: 1;
+}
+
+.cover img {
+    height: 35vh; 
+}
+
+/* Styles for about section */
+
+.about-sec {
+    background-color: #2098D1;
+}
+
+.about-div, .portfolio-div, .contact-div{ 
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.about-div h1, .about-div p, .contact-div h1, .contact-div p {
+    color: white; 
+}
+
+.about-div h1, .portfolio-div h1, .contact-div h1 { 
+    font-size: 35px; 
+    letter-spacing: 2px;
+}
+
+.about-div p, .portfolio-div p, .contact-div p {
+    text-align: center;
+}
+
+.h-padding {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.p-padding {
+    padding-bottom: 100px;
+}
+
+#about-padding {
+    padding-bottom: 20px;
+}
+
+#code-img {
+    max-width: 250px;
+    padding-bottom: 100px;
+}
+
+/* Styles for portfolio section */
+.portfolio-div h1 {
+    color: #585772;
+}
+
+.portfolio-div hr {
+    border: 1px solid #494964;
+    background: #494964;
+}
+
+/* Styles for contact section */
+.contact-sec {
+    background-color: #2098D1;
+}
+
+/* Styles for footer */
+footer {
+    background: #2E2E2E;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer span i {
+    margin: 0px 5px 0px 5px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a i, footer p a {
+    color: white;
+}
+
+footer a:visited, footer p a { 
+    color: #fff;
+}
+
+footer i:hover, footer p a:hover { 
+    color: #2098D1;
+  }
+
+footer p {
+    padding: 20px 0px 15px 0px;
+    font-size: 13px;
+}
+
+
+/* Responsive design for tablets and mobile using media queries */
+@media screen and (max-width: 1368px) {
+    .intro-text p {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        background-color: #FAF9F9;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;  
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    #nav-link-last {
+        margin-right: 30px;  
+    } 
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex;
+    } 
+
+    .presentation {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .introduction {
+        margin-top: 5vh;
+        text-align: center; 
+    }
+
+    .intro-text h1, .about-div h1, .portfolio-div h1, .contact-div h1 {
+        font-size: 30px;
+    }
+
+    .intro-text p {
+        font-size: 20px;
+        padding-right: 0px;
+    }
+
+    .about-div p, .portfolio-div p, .contact-div p {
+        font-size: 20px;
+    }
+
+    .cover img {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .cta {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .cta-projects { 
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .cta-projects { 
+        margin-right: 30px;
+    }
+}
+
+/* hamburger menu toggle */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 { 
+    transform: rotate(45deg) translate(-5px, -6px); 
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
