@@ -32,7 +32,7 @@ p {
 
 /* Styles for logo image */ 
 #logo-img {
-    max-width: 200px; 
+    width: 200px; 
     height: auto;  
 }
 
