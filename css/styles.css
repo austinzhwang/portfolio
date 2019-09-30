@@ -34,6 +34,8 @@ p {
 #logo-img {
     max-width: 200px;
     width: auto; 
+    max-height: 40px;
+    height: auto;
 }
 
 .logo-container, .nav-links {
