@@ -32,8 +32,7 @@ p {
 
 /* Styles for logo image */ 
 #logo-img {
-    max-width: 100%;
-    width: 35%;
+    max-height: 4vh;
 }
 
 .logo-container, .nav-links {
