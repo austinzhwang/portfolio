@@ -236,15 +236,15 @@ footer a {
     text-decoration: none;
 }
 
-footer a i, footer p a {
+footer a i {
     color: white;
 }
 
-footer a:visited, footer p a { 
+footer a:visited { 
     color: #fff;
 }
 
-footer i:hover, footer p a:hover { 
+footer i:hover { 
     color: #2098D1;
   }
 

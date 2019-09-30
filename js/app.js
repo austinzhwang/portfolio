@@ -44,10 +44,10 @@ const navSlide = () => {
 
 navSlide();
 
-// Grab all the scroll class anchor elements, use whatever class you like
+// Grab all the scroll class anchor elements
 const scrollElems = document.querySelectorAll('.scroll');
 
-// Now add an event listeners to those element
+// Add an event listeners to those element
 for (let i = 0; i < scrollElems.length; i++) {
     const elem = scrollElems[i];
     
@@ -60,7 +60,7 @@ for (let i = 0; i < scrollElems.length; i++) {
         // 2. find that node from the document
         const scrollEndElem = document.getElementById(scrollElemId);
         
-        // 3. and well animate to that node.. 
+        // 3. animate to that node.. 
         const anim = requestAnimationFrame((timestamp) => {
             const stamp = timestamp || new Date().getTime();
             const duration = 1200;
@@ -90,7 +90,7 @@ btnElem.addEventListener('click', ()=> {
         scrollToElem(start, stamp, duration, scrollEndElemTop, startScrollOffset);
     });
 });
-  
+
 const easeOutQuad = function (t) { 
     return t * (2-t);
 }
